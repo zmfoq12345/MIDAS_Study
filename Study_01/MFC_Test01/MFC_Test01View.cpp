@@ -64,7 +64,8 @@ void CMFCTest01View::OnDraw(CDC* /*pDC*/)
 	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
 	CClientDC dc(this);
 	CString strPoint;
-	strPoint.Format(_T("마우스 좌표 (%4d, %4d)"), m_Pos.x, m_Pos.y);
+	// strPoint.Format(_T("마우스 좌표 (%4d, %4d)"), m_Pos.x, m_Pos.y);
+	strPoint.Format(_T("움직이는 중...(%4d, %4d)"), m_Pos.x, m_Pos.y);
 	dc.TextOutW(0, 0, strPoint);
 }
 
