@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++_MFCStudy", "C++_MFCStud
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MClock", "MClock\MClock.vcxproj", "{B56822E8-567C-4203-B56E-9496FB414120}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calc", "Calc\Calc\Calc.vcxproj", "{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{B56822E8-567C-4203-B56E-9496FB414120}.Release|x64.Build.0 = Release|x64
 		{B56822E8-567C-4203-B56E-9496FB414120}.Release|x86.ActiveCfg = Release|Win32
 		{B56822E8-567C-4203-B56E-9496FB414120}.Release|x86.Build.0 = Release|Win32
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Debug|x64.ActiveCfg = Debug|x64
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Debug|x64.Build.0 = Debug|x64
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Debug|x86.Build.0 = Debug|Win32
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Release|x64.ActiveCfg = Release|x64
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Release|x64.Build.0 = Release|x64
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Release|x86.ActiveCfg = Release|Win32
+		{4818D38C-CD5E-485C-BF52-12BE7A16BBAC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
