@@ -32,6 +32,7 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
+#define len 4
 	int m_n1;
 	int m_n2;
 	int m_n3;
@@ -40,4 +41,7 @@ public:
 	int m_n6;
 	int m_n7;
 	int m_n8;
+	afx_msg void OnClickedButtonSort();
+	afx_msg void OnClickedButtonExit();
+	int* Bubble(int* nSource);
 };

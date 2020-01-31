@@ -81,6 +81,8 @@ BEGIN_MESSAGE_MAP(CBubbleSortDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_sort, &CBubbleSortDlg::OnClickedButtonSort)
+	ON_BN_CLICKED(IDC_BUTTON_exit, &CBubbleSortDlg::OnClickedButtonExit)
 END_MESSAGE_MAP()
 
 
@@ -169,3 +171,51 @@ HCURSOR CBubbleSortDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CBubbleSortDlg::OnClickedButtonSort()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	UpdateData(TRUE);
+	CClientDC dc(this);
+
+	static int nSource[len];
+
+	nSource[0] = m_n1;
+	nSource[1] = m_n2;
+	nSource[2] = m_n3;
+	nSource[3] = m_n4;
+
+	int * rSource = Bubble(nSource);
+
+	m_n5 = rSource[0];
+	m_n6 = rSource[1];
+	m_n7 = rSource[2];
+	m_n8 = rSource[3];
+
+
+	UpdateData(FALSE);
+}
+
+int * CBubbleSortDlg::Bubble(int * nSource) {
+	int i, j, temp;
+	for (i = 0; i < len; i++)
+	{
+		for (j = 0; j < len - i; j++)
+		{
+			if (nSource[j] > nSource[j + 1])
+			{
+				temp = nSource[j];
+				nSource[j] = nSource[j + 1];
+				nSource[j + 1] = temp;
+			}
+		}
+	}
+	return nSource;
+}
+
+void CBubbleSortDlg::OnClickedButtonExit()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	OnOK();
+}
